@@ -1,3 +1,7 @@
+// Need to add License Badge to top
+
+//(License is the last part in the example README, but Acceptance Criteria wants it at the top...?)
+
 function generateReadme(data) {
     return `
         # ${data.title}
@@ -41,12 +45,9 @@ function generateReadme(data) {
         To find my other works, please visit my GitHub profile: <${data.github}>.
         
         If you have additional questions or comments, please contact me via email here: <${data.email}>.
-
     `
 }
-// Need to add License Badge to top
 
- //(License is the last part in the example README, but Acceptance Criteria wants it at the top...?)
-
-
+// NEED to use module.exports for it to work...
+module.exports = generateReadme;
 

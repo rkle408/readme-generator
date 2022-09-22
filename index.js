@@ -18,7 +18,7 @@ const questions = [
     {
         type: 'input',
         name: 'description',
-        message: 'Please provide a short description of your project, including the what, why, and how of your project, i.e., motivation, why you built it, what problems it solves, what did you learn, and why it is important',
+        message: 'Please provide a short description of your project, including the what, why, and how of your project, i.e., motivation, why you built it, what problems it solves, what did you learn, and why it is important:',
     },
     {
         type: 'input',
@@ -28,17 +28,17 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide details to use your application',
+        message: 'Please provide details to use your application:',
     },
     {
         type: 'input',
         name: 'contributors',
-        message: 'Please list your collaborators & links to their GitHub profiles',
+        message: 'Please list your collaborators & links to their GitHub profiles:',
     },
     {
         type: 'input',
         name: 'credits',
-        message: 'Please list any other credits and their links',
+        message: 'Please list any other credits and their links:',
     },
     {
         type: 'list',
@@ -49,7 +49,7 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'Give an example command to test your application',
+        message: 'Give an example command to test your application:',
     },
     {
         type: 'input',
