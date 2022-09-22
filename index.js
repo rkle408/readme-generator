@@ -75,6 +75,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((responses) => {
+            // console.log(responses)
             // Once we have the users answers, then we tell them that we have their answers using this console.log
             console.log("Please wait while we generate your custom README...");
             // Utilize funtion to make the actual README file using the user responses
