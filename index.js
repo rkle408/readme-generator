@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const path = require('path');
 // Need to name the file "README.md" per usual naming convention:
 const fileName = `README.md`;
 
@@ -55,7 +56,10 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    // We need to be able to generate a README.md file with the information the user provided us:
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+}
 
 // TODO: Create a function to initialize app
 function init() {}
