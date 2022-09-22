@@ -36,6 +36,11 @@ const questions = [
         message: 'Please list your collaborators & links to their GitHub profiles',
     },
     {
+        type: 'input',
+        name: 'credits',
+        message: 'Please list any other credits and their links',
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'What license will you be using for your application?',
