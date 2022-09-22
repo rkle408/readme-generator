@@ -1,36 +1,52 @@
-// Need sections for:
-// # {user title}
+function generateReadme(data) {
+    return `
+        # ${data.title}
+    
+        ## Description
 
-// Need to add License Badge up here
+        ${data.description}
+    
+        ## Table of Contents
+        
+        [Installation](#Installation)
+        [Usage](#Usage)
+        [Contributors](#Contributors)
+        [License](#License)
+        [Tests](#Tests)
+        [Questions](#Questions)
 
-// ## Description
-// {user description}
+        ## Installation
+        
+        ${data.installation}
 
-// ## Table of Contents
-// [Installation](#Installation)
-// [Usage](#Usage)
-// [Contributors](#Contributors)
-// [License](#License)
-// [Tests](#Tests)
-// [Questions](#Questions)
+        ## Usage
+        
+        ${data.usage}
+        
+        ## Contributors
+        
+        ${data.contributors}
+        ${data.credits}
 
-// ## Installation
-// {user installation}
+        ## License
 
-// ## Usage
-// {user usage}
+        This project is licensed under the terms of the ${data.license} license.
 
-// ## Contributors
-// {user contributors}
-// {user credits}
+        ## Tests
 
-// ## License (this is the last part in the example README, but Acceptance Criteria wants it at the top...?)
-// {user license}
-// "THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under"
+        ${data.test}
 
-// ## Tests
-// {user test}
+        ## Questions
+        
+        To find my other works, please visit my GitHub profile: <${data.github}>.
+        
+        If you have additional questions or comments, please contact me via email here: <${data.email}>.
 
-// ## Questions
-// {user github}
-// {user email}
+    `
+}
+// Need to add License Badge to top
+
+ //(License is the last part in the example README, but Acceptance Criteria wants it at the top...?)
+
+
+
