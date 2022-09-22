@@ -5,6 +5,9 @@ const path = require('path');
 // Need to name the file "README.md" per usual naming convention:
 const fileName = `README.md`;
 
+// Will make README in a separate file to follow concept of modularization
+const generateReadme = require('generateReadme')
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
