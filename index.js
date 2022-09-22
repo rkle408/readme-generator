@@ -65,7 +65,17 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    // Use npm to display above questions to user
+    inquirer
+        .prompt(questions)
+        .then((responses) => {
+            // Once we have the users answers, then we tell them that we have their answers using this console.log
+            console.log("Please wait while we generate your custom README...");
+            // Utilize funtion to make the actual README file using the user responses
+            writeToFile(fileName, generateReadme({...responses}))
+        });
+}
 
 // Function call to initialize app
 init();
