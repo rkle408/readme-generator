@@ -23,12 +23,12 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'What needs to be done to install and run your application?',
+        message: 'What command needs to be done to INSTALL and run your application?',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide details to use your application:',
+        message: 'Please provide command/details to use/run your application:',
     },
     {
         type: 'input',
@@ -44,7 +44,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license will you be using for your application?',
-        choices: ['MIT', 'Apache', 'The Unliccense', 'None'],
+        choices: ['MIT', 'Apache', 'The Unlicense', 'None'],
     },
     {
         type: 'input',

@@ -1,51 +1,51 @@
 // Need to add License Badge to top
 
-//(License is the last part in the example README, but Acceptance Criteria wants it at the top...?)
+// Special Note: It will not be as readable or esthetically pleasing, but will need to align-left everything so README generates correctly.
 
 function generateReadme(data) {
-    return `
-        # ${data.title}
+return `
+# ${data.title}
     
-        ## Description
+## Description
 
-        ${data.description}
+${data.description}
     
-        ## Table of Contents
+## Table of Contents
         
-        [Installation](#Installation)
-        [Usage](#Usage)
-        [Contributors](#Contributors)
-        [License](#License)
-        [Tests](#Tests)
-        [Questions](#Questions)
+[Installation](#Installation)
+[Usage](#Usage)
+[Contributors](#Contributors)
+[License](#License)
+[Tests](#Tests)
+[Questions](#Questions)
 
-        ## Installation
+## Installation
         
-        ${data.installation}
+${data.installation}
 
-        ## Usage
+## Usage
         
-        ${data.usage}
+${data.usage}
         
-        ## Contributors
+## Contributors
         
-        ${data.contributors}
-        ${data.credits}
+Contributors: ${data.contributors}
+Credits/Resources: ${data.credits}
 
-        ## License
+## License
 
-        This project is licensed under the terms of the ${data.license} license.
+This project is licensed under the terms of the ${data.license} license.
 
-        ## Tests
+## Tests
 
-        ${data.test}
+${data.test}
 
-        ## Questions
+## Questions
         
-        To find my other works, please visit my GitHub profile: <${data.github}>.
+To find my other works, please visit my GitHub profile: <https://github.com/${data.github}>.
         
-        If you have additional questions or comments, please contact me via email here: <${data.email}>.
-    `
+If you have additional questions or comments, please contact me via email here: <${data.email}>.
+`
 }
 
 // NEED to use module.exports for it to work...
