@@ -1,5 +1,3 @@
-// Need to add License Badge to top
-
 // Special Note: It will not be as readable or esthetically pleasing, but will need to align-left everything so README generates correctly.
 function generateReadme(data) {
     let badge;
